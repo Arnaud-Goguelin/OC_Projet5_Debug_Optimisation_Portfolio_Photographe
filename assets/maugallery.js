@@ -237,9 +237,9 @@
     },
     showItemTags(gallery, position, tags) {
       var tagItems =
-        '<li class="nav-item"><button class="nav-link active active-tag" data-images-toggle="all" role="tab" aria-selected="true"  aria-label="Afficher toutes les photographies" tabindex="0">Tous</button></li>';
+        '<li class="nav-item"><button class="nav-link active active-tag" data-images-toggle="all" aria-selected="true"  aria-label="Afficher toutes les photographies" tabindex="0">Tous</button></li>';
       $.each(tags, function(index, value) {
-        tagItems += `<li class="nav-item active">
+        tagItems += `<li class="nav-item active" role="tab">
                 <button class="nav-link"  data-images-toggle="${value}"  aria-label="Afficher les photographies de ${value}" tabindex="0">${value}</button></li>`;
       });
       var tagsRow = `<ul class="my-4 tags-bar nav nav-pills" role="tablist">${tagItems}</ul>`;
