@@ -237,10 +237,10 @@
     },
     showItemTags(gallery, position, tags) {
       var tagItems =
-        '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all" role="button" aria-selected="true" tabindex="0" aria-label="Afficher toutes les photographies">Tous</span></li>';
+        '<li class="nav-item"><button class="nav-link active active-tag"  data-images-toggle="all"  aria-selected="true" tabindex="0" aria-label="Afficher toutes les photographies">Tous</button></li>';
       $.each(tags, function(index, value) {
         tagItems += `<li class="nav-item active">
-                <span class="nav-link"  data-images-toggle="${value}" role="button" aria-selected="false" tabindex="0" aria-label="Afficher les photographies de ${value}">${value}</span></li>`;
+                <button class="nav-link"  data-images-toggle="${value}"  aria-selected="false" tabindex="0" aria-label="Afficher les photographies de ${value}">${value}</button></li>`;
       });
       var tagsRow = `<ul class="my-4 tags-bar nav nav-pills">${tagItems}</ul>`;
 

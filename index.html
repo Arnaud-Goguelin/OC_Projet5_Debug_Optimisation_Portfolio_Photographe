@@ -1,20 +1,15 @@
 <!-- TO DO:
 
    * faire une optimisation globale du site, sur les performances;
-   * OK faire une optimisation globale du site, sur le SEO ;
    * mettre en place le référencement local en utilisant Schema.org ;
    * ajouter les metas pour les réseaux sociaux ;
 
-   * OKfaire les modifications liées à l’accessibilité du site ;
-   => est-ce nécessaire de définir les rôles de toutes les div???
    => comment utiliser aria-labelledby?
+	=> des balises aria tabpanel et tablist seraients-elles pertinente pour les boutons catégories?
 
    * produire un rapport d’optimisation présentant toutes vos actions et leur impact.
-
-   * OK La navigation dans la modale de la galerie entre images précédente et suivante ne fonctionne pas.
-
-   * OK Lorsque l’on change de filtre pour afficher les images, on ne voit pas quelle catégorie est sélectionnée. 
-	Normalement, la catégorie devrait avoir la couleur dorée en fond. Comme pour le filtre par défaut.  -->
+ 
+-->
 
 <!DOCTYPE html>
 <html lang = "fr">
@@ -43,12 +38,15 @@
 
 <header class="top-header">
 	<h1 class="name">Nina Carducci - Photographe</h1>
-	<nav class="nav" role="navigation">   
-			<a href="#about" aria-label="Aller à la description de Nina Carducci">À propos</a>
-			<a href="#gallery" aria-label="Aller à la galerie photos">Galerie</a>
-			<a href="#services" aria-label="Aller à les prestations de Nina Carducci">Service</a>
-			<a href="#contact" aria-label="Aller à le formulaire de contact">Contact</a>
-			<a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="lien vers le compte instagram de la photographe Nina Carducci"></a>
+	<nav class="nav" role="navigation">
+		<ul>
+			<li><a href="#about" aria-label="Aller à la description de Nina Carducci">À propos</a></li>
+			<li><a href="#gallery" aria-label="Aller à la galerie photos">Galerie</a></li>
+			<li><a href="#services" aria-label="Aller à les prestations de Nina Carducci">Service</a></li>
+			<li><a href="#contact" aria-label="Aller à le formulaire de contact">Contact</a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank">
+				<img src="assets/images/instagram.png" alt="lien vers le compte instagram de la photographe Nina Carducci"></a></li>
+		</ul>   
 	</nav>
 </header>
 
