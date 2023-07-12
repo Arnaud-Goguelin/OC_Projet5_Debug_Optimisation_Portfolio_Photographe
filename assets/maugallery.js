@@ -242,7 +242,7 @@
         tagItems += `<li class="nav-item active">
                 <button class="nav-link"  data-images-toggle="${value}"  aria-label="Afficher les photographies de ${value}" tabindex="0">${value}</button></li>`;
       });
-      var tagsRow = `<ul class="my-4 tags-bar nav nav-pills role="tablist">${tagItems}</ul>`;
+      var tagsRow = `<ul class="my-4 tags-bar nav nav-pills role="tabpanel">${tagItems}</ul>`;
 
       if (position === "bottom") {
         gallery.append(tagsRow);
