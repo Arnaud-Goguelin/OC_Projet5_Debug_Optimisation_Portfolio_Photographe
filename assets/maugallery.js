@@ -143,7 +143,7 @@
           activeImage = $(this);
         }
       });
-      let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
+      let activeTag = $(".tags-bar button.active-tag").data("images-toggle");
       let imagesCollection = [];
       if (activeTag === "all") {
         $(".item-column").each(function() {
@@ -172,7 +172,7 @@
       next =
         imagesCollection[index - 1] ||
         imagesCollection[imagesCollection.length - 1];
-
+      
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     nextImage() {
@@ -182,7 +182,7 @@
           activeImage = $(this);
         }
       });
-      let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
+      let activeTag = $(".tags-bar button.active-tag").data("images-toggle");
       let imagesCollection = [];
       if (activeTag === "all") {
         $(".item-column").each(function() {
