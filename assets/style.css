@@ -166,15 +166,14 @@ h1 {
 	justify-content: center;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: black;
+.nav-pills .active-tag, .nav-pills .show > .nav-link {
 	background-color: #BEB45A;
 	font-weight: 600;
 	border-radius:0 ;
 }
 
 .nav-pills .nav-link {
-	margin: 10px;
+	margin: 2px 5px;
 	font-size: 16px;
 	font-family: 'Inter';
 	font-style: normal;
