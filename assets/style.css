@@ -389,8 +389,10 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
+
 	.top-header {
 		flex-direction: column;
+		text-align: center;
 		padding-inline: 0;
 	}
 
