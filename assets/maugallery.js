@@ -224,7 +224,7 @@
                                 ? '<div class="mg-prev" style="cursor:pointer;position:absolute;top:50%;left:-15px;background:white;" role="button" aria-label="Image précédente"><</div>'
                                 : '<span style="display:none;" />'
                             }
-                            <img size="465x697" class="lightboxImage img-fluid" alt="Image ciblée agrandie"/>
+                            <img width="465" height="auto" class="lightboxImage img-fluid" alt="Image ciblée agrandie"/>
                             ${
                               navigation
                                 ? '<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;}" role="button" aria-label="Image suivante">></div>'

@@ -52,10 +52,12 @@ h1 {
 
 #about {
 	display: flex;
+	justify-content: space-between;
 	background-color: #F6D2B8;
 	padding-inline: 100px;
 	padding-block: 100px;
 	position: relative;
+	align-items: center;
 }
 
 .picture.left::before {
@@ -80,7 +82,8 @@ h1 {
 }
 
 #about-me {
-	flex: 2
+	margin: 0 0 0 20px;
+	flex: 2;
 }
 
 .about-me__title {
@@ -307,7 +310,7 @@ input[type="submit"] {
 		flex : 2;
 	}
 
-	#about, #contact .container {
+	#about,#contact .container {
 		align-items: center;
 	}
 
