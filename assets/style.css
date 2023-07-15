@@ -46,8 +46,9 @@ h1 {
 	color: #000
 }
 
-.social-link img {
-	width: 20px;
+img {
+	width: 100%;
+	height: auto;
 }
 
 #about {
@@ -75,10 +76,6 @@ h1 {
 	flex: 1;
 	margin: 0 20px;
 	z-index: 0;
-}
-
-.picture img {
-	width: 100%;
 }
 
 #about-me {
