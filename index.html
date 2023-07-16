@@ -1,9 +1,7 @@
 <!-- TO DO:
 
-   * mettre en place le référencement local en utilisant Schema.org ;
-
-   => comment utiliser aria-labelledby?
-	=> des balises aria tabpanel et tablist seraients-elles pertinente pour les boutons catégories?
+   Changer l'URL? celle de github est inbuvable et n'aide en rien le SEO ...
+   Moduler le code CSS et le code JS ?
 
    * produire un rapport d’optimisation présentant toutes vos actions et leur impact.
  
@@ -16,39 +14,80 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Primary Meta Tags -->
-	<title>Photographe en Ile de France</title>
+	<title>Photographe à Bordeaux</title>
 	<meta name="description" content="
 	Photographe professionnelle basée à Bordeaux, spécialisée dans la capture des moments exceptionnels, pour un mariage, un concert ou en entreprise.
     Des photos authentiques et artistiques qui racontent votre histoire. 
     Immortalisez ces moments uniques et créer des souvenirs durables et partagez-les. 
     Contactez-moi pour réserver votre session photo ou pour plus de renseignements">
+	<script type="application/ld+json">
+		[
+		  {
+			"@context": "http://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Nina Carducci - Photographe",
+			"image": "https://arnaud-goguelin.github.io/OC_Projet5_Debug_Optimisation_Portfolio_Photographe/assets/images%20webp/nina-4.webp",
+			"description": "Photographe professionnelle basée à Bordeaux, spécialisée dans la capture des moments exceptionnels, pour un mariage, un concert ou en entreprise. Des photos authentiques et artistiques qui racontent votre histoire. Immortalisez ces moments uniques et créez des souvenirs durables et partagez-les. Contactez-moi pour réserver votre session photo ou pour plus de renseignements.",
+			"telephone": "+33556677889",
+			"address": {
+			  "@type": "PostalAddress",
+			  "streetAddress": "68 avenue Alsace-Lorraine",
+			  "addressLocality": "Bordeaux",
+			  "postalCode": "33200"
+			},
+			"openingHoursSpecification": [
+				{
+			  	"@type": "OpeningHoursSpecification",
+			  	"dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday"
+				],
+				"opens": "10:00",
+				"closes": "19:00"
+				},
+			],
+			"url": "https://arnaud-goguelin.github.io/OC_Projet5_Debug_Optimisation_Portfolio_Photographe/",
+			"sameAs": [
+				"https://www.instagram.com/ninacarducci.photo/?hl=fr",
+			]
+		  }
+		]
+		</script>
 	<!-- Open Graph -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://arnaud-goguelin.github.io/OC_Projet5_Debug_Optimisation_Portfolio_Photographe/"/>
-	<meta property="og:title" content="Photographe en Ile de France"/>
+	<meta property="og:title" content="Photographe à Bordeaux"/>
 	<meta property="og:description" content="
 	Photographe professionnelle basée à Bordeaux, spécialisée dans la capture des moments exceptionnels, pour un mariage, un concert ou en entreprise.
     Des photos authentiques et artistiques qui racontent votre histoire. 
     Immortalisez ces moments uniques et créer des souvenirs durables et partagez-les. 
     Contactez-moi pour réserver votre session photo ou pour plus de renseignements"/>
-	<meta property="og:image" content="https://arnaud-goguelin.github.io/OC_Projet5_Debug_Optimisation_Portfolio_Photographe/assets/images webp/camera-3.webp"/>
+	<meta property="og:image" content="https://arnaud-goguelin.github.io/OC_Projet5_Debug_Optimisation_Portfolio_Photographe/assets/images%20webp/camera-3.webp"/>
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary" />
 	<meta property="twitter:site" content="@Nina-Carducci" />
-	<meta property="twitter:title" content="Photographe en Ile de France"/>
+	<meta property="twitter:title" content="Photographe à Bordeaux"/>
 	<meta property="twitter:description" content="
 	Photographe professionnelle basée à Bordeaux, spécialisée dans la capture des moments exceptionnels, pour un mariage, un concert ou en entreprise.
     Des photos authentiques et artistiques qui racontent votre histoire. 
     Immortalisez ces moments uniques et créer des souvenirs durables et partagez-les. 
     Contactez-moi pour réserver votre session photo ou pour plus de renseignements"/>
-	<meta property="twitter:image" content="https://arnaud-goguelin.github.io/OC_Projet5_Debug_Optimisation_Portfolio_Photographe/assets/images webp/camera-3.webp"/>
+	<meta property="twitter:image" content="https://arnaud-goguelin.github.io/OC_Projet5_Debug_Optimisation_Portfolio_Photographe/assets/images%20webp/camera-3.webp"/>
 	<!-- For crawlers -->
 	<meta name="robots" content="index, follow">
-	<link rel="canonical" href="https://github.com/Arnaud-Goguelin/OC_Projet5_Debug_Optimisation_Portfolio_Photographe/deployments" />
+	<link rel="canonical" itemprop="url" href="https://github.com/Arnaud-Goguelin/OC_Projet5_Debug_Optimisation_Portfolio_Photographe/deployments" />
 	<!-- Styles sheets -->
-	<link rel="shortcut icon" href="assets/images/favicon.ico">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="shortcut icon" href="assets/images webp/favicon.ico">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" async>
+	<link rel="stylesheet" href="./assets/style.css" async>
+	<!-- JS code -->
+	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+	<script src="./assets/maugallery.js" defer></script>
+	<script src="./assets/scripts.js" defer></script>
 </head>
 <body>
 
@@ -61,7 +100,7 @@
 			<li><a href="#services" aria-label="Aller à les prestations de Nina Carducci">Service</a></li>
 			<li><a href="#contact" aria-label="Aller à le formulaire de contact">Contact</a></li>
 			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank">
-				<img width="20" height="20"  src="assets/images webp/instagram-2.webp" alt="lien vers le compte instagram de la photographe Nina Carducci"></a></li>
+				<img width="20" height="20"  src="assets/images%20webp/instagram-2.webp" alt="lien vers le compte instagram de la photographe Nina Carducci"></a></li>
 		</ul>   
 	</nav>
 </header>
@@ -96,15 +135,15 @@
 	</div>
 </section>
 
-<section id="about" aria-label="Présentation de la photographe Nina Carducci">
+<section id="about" aria-label="Présentation de la photographe Nina Carducci" itemscope itemtype="https://schema.org/Person">
 	<div class="picture left">
-		<img width="560" height="560"  src="./assets/images webp/nina-4.webp" alt="portrait de Nina Carducci - photographe - selon un plan taille">
+		<img width="560" height="560"  src="./assets/images%20webp/nina-4.webp" alt="portrait de Nina Carducci - photographe - selon un plan taille" itemprop="image">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
 		<p class="about-me__introduction">Devenir <strong class="about-me__introduction">photographe</strong> était pour moi une évidence. Comme si j’y étais prédestiné. 
 			Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
-		<p class="about-me__description">Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, 
+		<p class="about-me__description" itemprop="description">Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, 
 			nous n’avons qu’une envie : le figer au travers de <strong class="strong_normal">photographies</strong> pour le savourer avec les personnes qui sont importantes à nos yeux, ou le <strong class="strong_normal">partager</strong> au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. 
 			Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, 
@@ -116,15 +155,15 @@
 	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img width="440" height="440" data-gallery-tag="Concert" class="gallery-item" src="./assets/images webp/galerie/concerts/aaron.webp" alt="Concert : vue de la scène depuis la fosse, en contre plongée" tabindex="0"/>
-			<img width="440" height="440" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images webp/galerie/entreprises/ali.webp" alt="Entreprises: homme d'affaire fier croisant les bras, plan de taille" tabindex="0"/>
-			<img width="440" height="440" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images webp/galerie/entreprises/jason.webp" alt="Entreprises: femme d'affaire riant assise à un bureau, plan de taille" tabindex="0"/>
-			<img width="440" height="440" data-gallery-tag="Mariages" class="gallery-item" src="./assets/images webp/galerie/mariages/hannah.webp" alt="Mariage: deux paires de mains se rejoingant pour une danse, plan de face" tabindex="0"/>
-			<img width="440" height="440" data-gallery-tag="Portrait" class="gallery-item" src="./assets/images webp/galerie/portraits/ade.webp" alt="Portrait: homme éprouvant en silence de la tristesse, en gros plan" tabindex="0"/>
-			<img width="440" height="440" data-gallery-tag="Mariages" class="gallery-item" src="./assets/images webp/galerie/mariages/jakob.webp" alt="Mariage: couple hétérosexuel très heureux, marchant main dans la main, plan italien " tabindex="0"/>
-			<img width="440" height="440" data-gallery-tag="Portrait" class="gallery-item" src="./assets/images webp/galerie/portraits/nino.webp" alt="Portrait: jeune femme se recoiffant, vue au travers d'un grillage, plan de taille en contre plongé" tabindex="0"/>
-			<img width="440" height="440" data-gallery-tag="Concert" class="gallery-item" src="./assets/images webp/galerie/concerts/austin.webp" alt="Concert: vue d'un chanteur sur une scène, plan de taille en contre plongée, arrière plan de fumée et lumière des téléphones du publics" tabindex="0"/>
-			<img width="440" height="440" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images webp/galerie/entreprises/mateus.webp" alt="Entreprises: femme d'affaire riant, assise à un bureau derrière un ordinateur portable, plan de taille" tabindex="0"/>
+			<img width="440" height="440" data-gallery-tag="Concert" class="gallery-item" src="./assets/images%20webp/galerie/concerts/aaron.webp" alt="Concert : vue de la scène depuis la fosse, en contre plongée" tabindex="0"/>
+			<img width="440" height="440" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images%20webp/galerie/entreprises/ali.webp" alt="Entreprises: homme d'affaire fier croisant les bras, plan de taille" tabindex="0"/>
+			<img width="440" height="440" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images%20webp/galerie/entreprises/jason.webp" alt="Entreprises: femme d'affaire riant assise à un bureau, plan de taille" tabindex="0"/>
+			<img width="440" height="440" data-gallery-tag="Mariages" class="gallery-item" src="./assets/images%20webp/galerie/mariages/hannah.webp" alt="Mariage: deux paires de mains se rejoingant pour une danse, plan de face" tabindex="0"/>
+			<img width="440" height="440" data-gallery-tag="Portrait" class="gallery-item" src="./assets/images%20webp/galerie/portraits/ade.webp" alt="Portrait: homme éprouvant en silence de la tristesse, en gros plan" tabindex="0"/>
+			<img width="440" height="440" data-gallery-tag="Mariages" class="gallery-item" src="./assets/images%20webp/galerie/mariages/jakob.webp" alt="Mariage: couple hétérosexuel très heureux, marchant main dans la main, plan italien " tabindex="0"/>
+			<img width="440" height="440" data-gallery-tag="Portrait" class="gallery-item" src="./assets/images%20webp/galerie/portraits/nino.webp" alt="Portrait: jeune femme se recoiffant, vue au travers d'un grillage, plan de taille en contre plongé" tabindex="0"/>
+			<img width="440" height="440" data-gallery-tag="Concert" class="gallery-item" src="./assets/images%20webp/galerie/concerts/austin.webp" alt="Concert: vue d'un chanteur sur une scène, plan de taille en contre plongée, arrière plan de fumée et lumière des téléphones du publics" tabindex="0"/>
+			<img width="440" height="440" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images%20webp/galerie/entreprises/mateus.webp" alt="Entreprises: femme d'affaire riant, assise à un bureau derrière un ordinateur portable, plan de taille" tabindex="0"/>
 		</div>
 	</div>
 </section>
@@ -141,13 +180,13 @@
 </article>
 
 
-<section id="services" aria-label="Présentations des prestations de Nina Carducci">
+<section id="services" aria-label="Présentations des prestations de Nina Carducci" itemscope itemtype="https://schema.org/PhotographAction">
 	<h2 class="title">Mes services</h2>
 	<div class="container">
 		<div class="service">
-			<div class="service__description">
+			<div class="service__description" itemprop="description">
 				<h3 class="service__name"><strong class="service__name">Shooting</strong> photo</h3>
-				<p>Pour <strong class="strong_normal">capturer vos moments</strong> les plus précieux et garder un souvenir impérissable. Je me déplace en <strong class="strong_normal">Île-de-France</strong> pour réaliser vos photos</p>
+				<p>Pour <strong class="strong_normal">capturer vos moments</strong> les plus précieux et garder un souvenir impérissable. <strong class="strong_normal">Je me déplace en Île-de-France</strong> pour réaliser vos photos</p>
 			</div>
 			<div class="service__price">
 				<p class = "price">350€/demi journée</p>
@@ -156,7 +195,7 @@
 
 		</div>
 		<div class="service">
-			<div class="service__description">
+			<div class="service__description" itemprop="description">
 				<h3 class="service__name">Retouches</h3>
 				<p>Vous souhaitez <strong class="strong_normal">retoucher vos photos</strong> pour un résultat professionnel ? 
 					Bénéficier d’un rendu optimal pour vos <strong class="strong_normal">publications</strong></p>
@@ -167,7 +206,7 @@
 			</div>
 		</div>
 		<div class="service">
-			<div class="service__description">
+			<div class="service__description" itemprop="description">
 				<h3 class="service__name"><strong class="service__name">Album</strong> photos</h3>
 				<p>Partagez avec vos proches et vos clients les photos des moments passés ensemble 
 					à travers un album photo <strong class="strong_normal">personnalisé</strong></p>
@@ -208,14 +247,10 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img width="420" height="418" src="./assets/images webp/camera-3.webp" title ="appareil photo" alt = "image d'un appareil photo avec éclairage rouge par la droite">
+			<img width="420" height="418" src="./assets/images%20webp/camera-3.webp" title ="appareil photo" alt = "image d'un appareil photo avec éclairage rouge par la droite">
 		</div>
 	</div>
 </aside>
 
 </body>
-<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="./assets/maugallery.js"></script>
-<script src="./assets/scripts.js"></script>
 </html>
