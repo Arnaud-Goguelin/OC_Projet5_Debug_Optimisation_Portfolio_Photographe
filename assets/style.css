@@ -328,6 +328,11 @@ input[type="submit"] {
 
 	}
 
+	a img {
+		width: 20px;
+		height: 20px;
+	}
+
 	.picture {
 		width: 50%;
 	}
