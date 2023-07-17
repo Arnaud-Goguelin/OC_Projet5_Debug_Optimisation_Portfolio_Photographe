@@ -237,7 +237,7 @@
     },
     showItemTags(gallery, position, tags) {
       var tagItems =
-        '<li class="nav-item"><button class="nav-link active-tag" data-images-toggle="all" aria-label="Afficher toutes les photographies" aria-selected="true" tabindex="0">Tous</button></li>';
+        '<li class="nav-item"><button class="nav-link active-tag" data-images-toggle="all" aria-label="Afficher toutes les photographies" aria-pressed="true" tabindex="0">Tous</button></li>';
       $.each(tags, function(index, value) {
         tagItems += `<li class="nav-item">
                 <button class="nav-link"  data-images-toggle="${value}"  aria-label="Afficher les photographies de ${value}" tabindex="0">${value}</button></li>`;
@@ -256,10 +256,10 @@
       if ($(this).hasClass("active-tag")) {
         return;
       }
-      $(".active-tag").attr("aria-selected", "false");
+      $(".active-tag").attr("aria-pressed", "false");
       $(".active-tag").removeClass("active-tag");
       $(this).addClass("active-tag");
-      $(this).attr("aria-selected", "true");
+      $(this).attr("aria-pressed", "true");
 
       var tag = $(this).data("images-toggle");
 
