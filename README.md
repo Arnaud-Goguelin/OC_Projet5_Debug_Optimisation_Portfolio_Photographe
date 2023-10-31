@@ -22,14 +22,14 @@ Score Lighthouse/GTMetrix après débuggage/optimisation:
 ![image](https://github.com/Arnaud-Goguelin/OC_Projet5_Debug_Optimisation_Portfolio_Photographe/assets/124574198/f597a049-3608-4915-9af5-5c83dc83371b)
 ![image](https://github.com/Arnaud-Goguelin/OC_Projet5_Debug_Optimisation_Portfolio_Photographe/assets/124574198/3138ff9d-096c-4216-9862-c6490dcc6fdd)
 
-**Pistes d'amélioration présentées lors de la soutenance**
+#### Pistes d'amélioration présentées lors de la soutenance
   - Mettre en cache les ressources statiques,
   - Réécrire le code JS pour le simplifier
   - Réécrire le code CSS pour le simplifier OU utiliser PurgeCSS
     **=> cela permettrait un gain de performance nous autorisant des images de meilleures qualités, critère essentiel pour le site d'une photographe!**
   - Revoir le feedback visuel du formulaire (accessibilité) 
 
-Commentaires généraux:
+### Commentaires généraux:
   - Livrables complets et soignés
   - Remarques : bonne élocution, prise en compte du rôle, du client et des détails demandés
   - Tour des points attendus bien ciblés. Rebond et retour suite à l'échange avec le rôle Nina au top
