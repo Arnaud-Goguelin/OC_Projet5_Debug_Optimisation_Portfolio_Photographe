@@ -2,6 +2,7 @@
 Organisme de Formation: Openclassrooms
 
 ### Projet 5 : Débuggez et optimisez un site de photographe
+**Projet validé**
 
 ### Consignes du projet:
   - Lien vers le site existant (et non débuggé, non optimisé): [Site_Photographe](https://nina-carducci.github.io/)
@@ -13,7 +14,6 @@ Organisme de Formation: Openclassrooms
   - Produire un rapport d’optimisation présentant toutes vos actions et leur impact
   - Corriger les bugs existants (navigation dans la modale de la galerie photos, bouton filtre actif pas mis en valeur)
 
-**Projet validé**
 Score Lighthouse/GTMetrix avant débuggage/optimisation:
 ![image](https://github.com/Arnaud-Goguelin/OC_Projet5_Debug_Optimisation_Portfolio_Photographe/assets/124574198/efe72a48-0c74-4c78-a12f-67e01608fd68)
 ![image](https://github.com/Arnaud-Goguelin/OC_Projet5_Debug_Optimisation_Portfolio_Photographe/assets/124574198/04383aa5-2046-40cf-b47c-6a550955fa00)
@@ -22,7 +22,7 @@ Score Lighthouse/GTMetrix après débuggage/optimisation:
 ![image](https://github.com/Arnaud-Goguelin/OC_Projet5_Debug_Optimisation_Portfolio_Photographe/assets/124574198/f597a049-3608-4915-9af5-5c83dc83371b)
 ![image](https://github.com/Arnaud-Goguelin/OC_Projet5_Debug_Optimisation_Portfolio_Photographe/assets/124574198/3138ff9d-096c-4216-9862-c6490dcc6fdd)
 
-#### Pistes d'amélioration présentées lors de la soutenance
+### Pistes d'amélioration présentées lors de la soutenance
   - Mettre en cache les ressources statiques,
   - Réécrire le code JS pour le simplifier
   - Réécrire le code CSS pour le simplifier OU utiliser PurgeCSS
