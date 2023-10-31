@@ -3,6 +3,7 @@ Organisme de Formation: Openclassrooms
 
 ### Projet 5 : Débuggez et optimisez un site de photographe
 **Projet validé**
+[Site deployé](https://arnaud-goguelin.github.io/OC_Projet5_Debug_Optimisation_Portfolio_Photographe/)
 
 ### Consignes du projet:
   - Lien vers le site existant (et non débuggé, non optimisé): [Site_Photographe](https://nina-carducci.github.io/)
